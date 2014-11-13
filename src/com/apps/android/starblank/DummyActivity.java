@@ -14,7 +14,10 @@ public class DummyActivity extends Activity
     
     TextView tv;
     WebView webview;
-    String url="http://www.trastosviejos.com/luz/listado.php";
+    //String url="http://www.starblank.com/luz/listado.php";
+    //////////////////////////
+    String url="Put the URL of listado.php here!";
+    /////////////////////////
     
     @Override
     public void onCreate(Bundle savedInstanceState)
