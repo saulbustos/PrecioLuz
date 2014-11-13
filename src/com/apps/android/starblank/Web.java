@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.apps.android.starblank;
 
 import android.app.Activity;
@@ -18,7 +14,8 @@ public class Web extends Activity
     
     TextView tv;
     WebView webview;
-    String url="http://www.trastosviejos.com/luz/listado.php";
+    //String url="http://www.starblank.com/luz/listado.php";
+    String url="Your server path to listado.php here!";
     String summary = "<html><body><div style='font-family:verdana; "
                     + "text-align:center; color:black;'><br>Cargando "
                     + "datos, por favor espera...</div></body></html>";
