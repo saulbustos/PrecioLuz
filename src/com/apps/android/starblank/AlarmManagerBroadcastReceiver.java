@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.apps.android.starblank;
 
 import android.appwidget.AppWidgetManager;
@@ -19,18 +15,16 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
  public void onReceive(Context context, Intent intent) {
      
   PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
-  PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "YOUR TAG");
+  PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "TAG");
 
   
   //Acquire the lock
   wl.acquire();
-  
+  //Bloqueamos, pintamos y desbloqueamos
   try{
       //You can do the processing here update the widget/remote views.
       RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
-        R.layout.main);
-         //remoteViews.setInt(R.id.widget_textview, "setBackgroundResource",c);
-       //remoteViews.setTextViewText(R.id.widget_textview," Ahora:"+String.valueOf(precioActual)+"€ Max:"+String.valueOf(max)+"€ Media:"+String.valueOf(media)+"€");
+      R.layout.main);
       String[]salida=ut.parsea();
       if (salida!=null){
         remoteViews.setInt(R.id.widget_textview, "setBackgroundResource",ut.getColor(salida[0]));
