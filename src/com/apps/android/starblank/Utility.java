@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.apps.android.starblank;
 
 import java.io.BufferedReader;
@@ -29,9 +25,9 @@ public class Utility {
      }
      
      private int getSecond(){
-               Date date = new Date();   // given date
-                Calendar calendar = GregorianCalendar.getInstance(); // creates a new calendar instance
-                calendar.setTime(date);   // assigns calendar to given date 
+               Date date = new Date();  
+                Calendar calendar = GregorianCalendar.getInstance(); 
+                calendar.setTime(date);  
                 return calendar.get(Calendar.SECOND);           
                   
 
@@ -42,7 +38,8 @@ public class Utility {
                     String json="";
                     InputStream in;
                     try{
-                       feedUrl= new URL("http://www.trastosviejos.com/luz/data.txt").openConnection();
+                       //feedUrl= new URL("http://www.starblank.com/luz/data.txt").openConnection();
+                       feedUrl= new URL("Your server path to data.txt!").openConnection();
 
                       in = feedUrl.getInputStream();
                       json = Utility.convertStreamToString(in);
