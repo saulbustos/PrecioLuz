@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/RelativeLayout"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="#000000"
+
+>
+
+ <TextView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\nEl widget 'Tu Consumo de Luz' se ha instalado correctamente.\n\n\nAñádelo a tu escritorio desde el menú de widgets de tu dispositivo y ¡Empieza a ahorrar!\n\n\nUna vez añadido, puedes pulsarlo para ver la lista de precios diarios." 
+        android:textSize = "18sp"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:paddingTop="20dip"
+        android:drawableTop="@drawable/iconold" 
+        />
+ <Button
+  android:id="@+id/new_button"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_alignParentBottom="true"
+  android:layout_centerHorizontal="true"
+  android:text="OK"
+ />
+
+</RelativeLayout>

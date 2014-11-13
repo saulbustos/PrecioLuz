@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:22
+-keep class com.apps.android.starblank.AlarmManagerBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.apps.android.starblank.DummyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.apps.android.starblank.PrecioLuz { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class com.apps.android.starblank.Web { <init>(...); }
+
