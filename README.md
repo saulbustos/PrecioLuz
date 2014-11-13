@@ -8,7 +8,8 @@ every hour will have a VERY different price, so i decided publish this app for h
 The widget will display the current electricity price. The data is obtained for the OMIE web page, and it's
 parsed using a PHP gateway, so you will hace to take a took into the PrecioLuz-Webservice project, that is required
 for this app to run.
-NOTE: Remember to change the url var in DummyActivity.java to point YOUR server and path to listado.php file!
+NOTE: Remember to change the url var in DummyActivity.java to point YOUR server and path to listado.php file, and
+feedUrl for pointing data.txt, in Utility.java! it won't work if you forget this!
 
 This project is a NetBeans 7 project, written in Java+Android SDK, so if you have all this installed, you're
 ready to go
