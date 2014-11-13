@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.apps.android.starblank;
 
 import android.app.AlarmManager;
@@ -41,6 +37,7 @@ public class PrecioLuz extends AppWidgetProvider {
   Intent intent = new Intent(context, AlarmManagerBroadcastReceiver.class);
   PendingIntent pi = PendingIntent.getBroadcast(context, 0, intent, 0);
 
+//Set alarmManager to call the webservice every 30 seconds
   am.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+ 1000, 30000 , pi);
   RemoteViews remoteViews =
                 new RemoteViews( context.getPackageName(), R.layout.main );
@@ -79,8 +76,7 @@ public class PrecioLuz extends AppWidgetProvider {
  public void onAppWidgetOptionsChanged(Context context,
    AppWidgetManager appWidgetManager, int appWidgetId,
    Bundle newOptions) {
-  //Do some operation here, once you see that the widget has change its size or position.
-  //Toast.makeText(context, "onAppWidgetOptionsChanged() called", Toast.LENGTH_SHORT).show();
+ //pokemon!
  }
  
  
